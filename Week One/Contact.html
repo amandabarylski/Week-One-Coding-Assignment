@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <!--Used a Heading to indicate to users what the following form is for-->
+    <h2>Sign up for our newsletter!</h2>
+    <!--Used a Form tag here with multiple input types that would allow a user to enter the required text and
+        optionally select answers to a final question. I consulted MDN to see how labels and required fields work.-->
+    <form>
+        <!--The first two inputs are for the first and last name of the user.
+        I also added labels to all inputs for accessibility purposes.-->
+        <label for="firstName">First Name (required)</label>
+        <input type="text" required name="firstName" placeholder="First Name">
+        <label for="lastName">Last Name (required)</label>
+        <input type="text" required name="lastName" placeholder="Last Name"> <br><br>
+        <!--After two line breaks for cleaner reading, I added an input and label for an email address.-->
+        <label for="email">Email Address (required)</label>
+        <input type="email" required name="email" placeholder="name@example.com"> <br><br>
+        <!--Two line breaks again, followed by an optional question that can have multiple answers, with a line break
+        between each to make it look neater.-->
+        <p>What makes you interested in aether wells? Select any number of answers.</p>
+        <input type="checkbox" name="live" value="live"><label for="live">I live near an aether well.</label> <br>
+        <input type="checkbox" name="travel" value="travel"><label for="travel">I am planning to travel to an area with an aether well.</label> <br>
+        <input type="checkbox" name="student" value="student"><label for="student">I am a student researching the topic.</label> <br>
+        <input type="checkbox" name="stories" value="stories"><label for="stories">I want to know how much truth the stories about aether wells hold.</label> <br><br>
+        <input type="submit" name="submit" value="submit">
+    </form>
+    <!--I added a line break and a horizontal line after the form in order to separate it visually from the links.-->
+    <br>
+    <hr />
+    <section>
+        <h2>Links</h2>
+        <a href="index.html">Home</a> <br>
+        <a href="Attributes.html">Attributes</a> <br>
+        <a href="Tips.html">Tips</a> <br>
+        <a href="Contact.html">Top</a>
+    </section>
+    <hr />
+    <!--I copied and pasted the footer as well as the links from the home page.-->
+    <footer>
+        <p>Copyright Vayar Research Institute M.E. 1171</p>
+    </footer>
+</body>
+</html>
